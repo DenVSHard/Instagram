@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/instagram.jpg">
+    <title>Istagram</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Satisfy&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@1,900&family=Satisfy&display=swap"
+        rel="stylesheet">
+
+   
+
+<body onload="show(); showAllComments();">
+
+    <div class="header">
+        <h1 onclick="reloadPage()" style="font-family: 'Satisfy', cursive;">Instagram</h1>
+        <button onclick="reloadPage()">
+            <h3><span style="font-size: 24px;">🏠</span> Startseite</h3>
+        </button>
+        <button class="search-button" onclick="showSearchBar()">
+            <h3><span style="font-size: 24px;">🔍</span> Suchen</h3>
+        </button>
+        <input type="text" class="search-bar" id="searchBar" placeholder="Suche...">
+        <button>
+            <h3><span style="font-size: 24px;">▶️</span> Reels</h3>
+        </button>
+        <button>
+            <h3><span style="font-size: 24px;">📬</span> Nachrichten</h3>
+        </button>
+        <button>
+            <h3><span style="font-size: 24px;">👤</span> Profil</h3>
+        </button>
+    </div>
+
+    <div class="post" id="postcontainer"></div>
+
+    <div class="follow">
+        <img class="imgFollow" src="img/1.jpg" alt="bild">
+        <a href="https://developerakademie.com/">
+            <button class="imgFollow">Folgen</button>
+        </a>
+
+        <img class="imgFollow" src="img/2.jpg" alt="bild">
+        <a href="https://www.instagram.com/junus.ergin/?hl=de">
+            <button class="imgFollow">Folgen</button>
+        </a>
+
+    </div>
+
+</body>
+
+</html>

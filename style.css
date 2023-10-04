@@ -1,0 +1,237 @@
+body {
+    margin: 0px;
+}
+
+h1 {
+    cursor: pointer;
+    margin: 56px;
+}
+
+h3 {
+    font-family: 'Merriweather', serif;
+}
+
+h4 {
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    font-family: 'circular';
+}
+
+button {
+    text-align: start;
+    margin: 16px;
+    width: 200px;
+    border-radius: 24px;
+    background-color: white;
+    cursor: pointer;
+    border-style: none;
+}
+
+button:hover {
+    background-color: rgb(224 224 224 /36%);
+    border-style: groove;
+}
+
+.header {
+    background-color: white;
+    z-index: 999;
+    position: fixed;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 16%);
+    width: 264px;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.post {
+    margin-left: 364px;
+    margin-right: 364px;
+    padding-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+}
+
+.postBox {
+    padding-right: 8px;
+    padding-left: 8px;
+    border-radius: 8px;
+    width: 564px;
+    box-shadow: 0px 0px 1px 0px;
+}
+
+img {
+    width: 564px;
+    height: 100%;
+}
+
+.like-icon {
+    font-size: 24px;
+    margin: 8px;
+    width: 34px;
+    background-color: red;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.follow {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    margin-left: 1048px;
+    bottom: 596px;
+}
+
+.imgFollow {
+    width: 64px;
+    font-family: 'Merriweather', serif;
+}
+
+@media(max-width: 1210px) {
+    .follow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        position: fixed;
+        margin-left: 1024px;
+        bottom: 424px;
+    }
+
+    .imgFollow {
+        width: 64px;
+        font-family: 'Merriweather', serif;
+    }
+}
+
+@media(max-width: 1100px) {
+    .follow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        position: fixed;
+        margin-left: 929px;
+        bottom: 424px;
+    }
+
+    .imgFollow {
+        width: 64px;
+        font-family: 'Merriweather', serif;
+    }
+}
+
+@media (max-width: 1006px) {
+    .follow {
+        display: none;
+    }
+
+    .imgFollow {
+        display: none;
+    }
+}
+
+@media (max-width: 930px) {
+    button {
+        text-align: start;
+        margin: 16px;
+        width: 200px;
+        border-radius: 24px;
+        background-color: white;
+        cursor: pointer;
+        border-style: none;
+        display: contents;
+    }
+
+    h1 {
+        margin-left: 8px;
+    }
+
+    .header {
+        background-color: white;
+        z-index: 999;
+        position: fixed;
+        box-shadow: 0 0 0 1px rgb(0 0 0 / 16%);
+        width: 194px;
+        height: 100vh;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .post {
+        margin-left: 204px;
+        margin-right: 364px;
+        padding-top: 48px;
+        display: flex;
+        flex-direction: column;
+        gap: 96px;
+    }
+
+    .postBox {
+        width: 564px;
+        box-shadow: 0px 0px 1px 0px;
+    }
+
+    img {
+        width: 564px;
+        height: 100%;
+    }
+
+}
+
+.add {
+    width: 558px;
+    height: 115px;
+    resize: none;
+    font-family: cursive;
+    background-color: floralwhite;
+    border-radius: 8px;
+}
+
+.comentButton {
+    margin: 0px;
+    border-radius: 8px;
+    width: 75px;
+    border-style: solid;
+    background-color: floralwhite;
+}
+
+.comment {
+    border-radius: 8px;
+    word-wrap: break-word;
+    margin-top: 16px;
+    box-shadow: 0px 0px 0px 1px rgb(0 0 0);
+    padding: 4px;
+    margin-bottom: 8px;
+}
+
+.search-bar {
+    display: none;
+    text-align: start;
+    background-color: rgb(224 224 224 /36%);
+    height: 60px;
+    margin: 16px;
+    width: 192px;
+    border-radius: 24px;
+    border-style: groove;
+    cursor: pointer;
+}
